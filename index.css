@@ -218,7 +218,7 @@ ul li:hover{
                 
                     position: fixed;
                     left:10px;
-                    top:200px;
+                    top:100px;
                     width:180px;
                     z-index:200;
                 }
