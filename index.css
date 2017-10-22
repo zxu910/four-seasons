@@ -213,5 +213,14 @@ ul li:hover{
                 width:203px;
                 position:fixed;
             }
+
+            #logo img{
+                
+                    position: absolute;
+                    left:10px;
+                    top:50px;
+                    width:180px;
+                    z-index:200;
+                }
           
     }
