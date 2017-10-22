@@ -1,0 +1,517 @@
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+@import url(//fonts.googleapis.com/earlyaccess/kokoro.css);
+
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    margin-bottom:50px;
+  
+}
+
+
+body{
+
+    margin-bottom:30px;
+    background-color:#EFECE5;
+
+}
+
+.main{
+
+    margin-right:10%;
+    margin-left:10%;
+    background-color:white;
+    
+
+}
+
+section{
+
+    width:100%;
+    float:left;
+
+}
+
+p{
+
+    font-size:15pt;
+}
+
+h2{
+    font-family: 'cwTeXFangSong', serif;
+    font-size:30px;
+}
+
+.line{
+    
+        margin-top:-30px;
+        height:1px;
+        width:50%;
+        background: rgb(216, 58, 58)
+    
+        }
+    
+        
+img{
+
+    width:100%;
+    height:100%;
+    margin:0 auto;
+    -webkit-transform: scale(1.1);  /* 默认显示 0.5 倍的照片 */
+    -webkit-transition: 1s;
+   
+    opacity:0.65;
+}
+
+ img:hover{
+    -webkit-transform: scale(1.3);
+    opacity:1;
+    z-index:-1;
+    }
+
+
+    
+/* title-bar */
+
+#title-bar{
+    
+    
+    width:100%; 
+    min-height:300px;
+    background: url("img/spring/spring.jpg") no-repeat;
+    background-size:90% auto;
+    background-attachment: fixed ;
+  
+   
+  
+}
+
+#title-bar-background{
+
+    background-color: goldenrod;
+    width:60px;
+    height:50px;
+    top:0;
+    left:0;
+    z-index:3;
+    position:fixed;
+}
+
+nav{
+    z-index:300;
+    display:none;
+  
+
+}
+
+
+
+#title-bar-rwd{
+
+    background:url(img/nav.png) no-repeat center;
+    float:left;
+    width:40px;
+    height:40px;
+    position:fixed;
+    top:6px;
+    left:10px;
+    display:none;
+}
+
+#title-bar-rwd:hover{
+
+    cursor:pointer;
+}
+
+ #div1{
+
+    width:100%;
+    height:47.5px;
+    position:fixed;
+    top:0;
+    left:60px;
+    float:left;
+    font-family: 'Kokoro', serif;
+    background:rgb(255, 255, 255);
+    border:1px black solid;
+    text-align:center;
+    z-index:1;
+    display:none;
+  
+
+ }
+
+ #div1 li{
+    list-style:none;
+    float:left;
+    text-align:center;
+    width:21.2%;
+    height:50px;
+    font-size:30px;
+    display:none;
+
+ }
+ #div1 li:hover{
+     
+    cursor:pointer;
+   
+ }
+
+ #div1-spring:hover{
+
+     background: wheat;
+     transition:1.2s ease-in;
+     opacity:0.7;
+    
+ }
+
+ #div1-summer:hover{
+    
+         background: wheat;
+         transition:1.2s ease-in;
+         opacity:0.7;
+        
+ }
+ #div1-autumn:hover{
+    
+         background:wheat;
+         transition:1.2s ease-in;
+         opacity:0.7;
+        
+}
+#div1-winter:hover{
+    
+         background: wheat;
+         transition:1.2s ease-in;
+         opacity:0.7;
+        
+     }
+
+/* slide-bar */
+
+#slide-bar{
+
+    width:10%;
+    height:100%;
+    background:#fff;
+    border:solid black 1px;
+    right:0px;
+    top:0;
+    position:fixed;
+    z-index:3;
+    box-shadow: inset 2px 0px 8px 0px  rgba(39, 39, 39, 0.897);
+    font-family: 'Kokoro', serif;
+}
+
+#slide-bar ul {
+
+  list-style: none;
+ 
+}
+
+#slide-bar ul li{
+
+    font-size:40pt;
+    letter-spacing:20px;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    position:absolute;
+
+}
+
+#slide-bar ul li:hover{
+
+    cursor:pointer;
+}
+
+#slide-bar-spring{
+
+  margin:200px 30% 0 10px;
+  position:absolute;
+
+ 
+  
+}
+
+#slide-bar-spring:hover{
+    
+    background:wheat;
+    border-radius:99em;
+    width:50px;
+    height:50px; 
+    position:absolute;
+    transition:1.2s ease-in;
+    opacity:0.7;
+   
+    
+}
+
+#slide-bar-summer{
+    
+    margin:380px 30% 0 10px;
+
+}
+#slide-bar-summer:hover{
+    
+    background:wheat;
+    border-radius:99em;
+    width:50px;
+    height:50px; 
+    z-index:1;
+    position:absolute;
+    transition:1.2s ease-in;
+    opacity:0.7;
+    
+}
+
+#slide-bar-autumn{
+    
+    margin:560px 30% 0 0;
+
+}
+#slide-bar-autumn:hover{
+    background:wheat;
+    border-radius:99em;
+    width:50px;
+    height:50px; 
+    z-index:1;
+    position:absolute;
+    transition:1.2s ease-in;
+    opacity:0.7;
+    
+
+
+}
+
+#slide-bar-winter{
+    
+    margin:740px 30% 0 0;
+
+}
+
+#slide-bar-winter:hover{
+
+    background:wheat;
+    border-radius:99em;
+    width:50px;
+    height:50px; 
+    z-index:1;
+    position:absolute;
+    transition:1.2s ease-in;
+    opacity:0.7;
+    
+
+
+}
+
+
+
+/* main-container */
+
+
+#paragraph-1{
+
+    width:48%;
+    float:right;
+    vertical-align:left;
+    margin:1.5% 1% 0 1%;
+
+ 
+   
+}
+
+#paragraph-2{
+
+    width:48%;
+    float:left;
+    vertical-align:right;
+    margin:1.5% 1% 0 1%;
+
+   
+}
+
+#paragraph-3{
+    
+        width:48%;
+        float:right;
+        vertical-align:left;
+        margin:1.5% 1% 0 1%;
+    
+     
+       
+    }
+    
+#paragraph-4{
+
+    width:48%;
+    float:left;
+    vertical-align:right;
+    margin:1.5% 1% 0 1%;
+
+    
+}
+
+
+    
+#pic-1{
+
+
+    float:left;
+    margin:0 auto;
+    width:40%;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-left:5%;
+    border:10px solid #fff;
+ 
+}
+
+#pic-2{
+
+    float:right;
+    margin:0 auto;
+    width:40%;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-right:5%;
+    border:10px solid #fff;
+ 
+
+    }
+
+#pic-3{
+
+    float:left;
+    margin:0 auto;
+    width:40%;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-left:5%;
+    border:10px solid #fff;
+ 
+
+}
+
+#pic-4{
+
+    float:right;
+    margin:0 auto;
+    width:40%;
+    background-color: #ccc;
+    overflow: hidden;
+    margin-right:5%;
+    border:10px solid #fff;
+ 
+
+    }
+
+
+    /* rwd */
+
+
+    /* rwd 1150px */
+
+    @media screen and (max-width:1150px){
+
+      #slide-bar ul li{
+
+        font-size: 32px;
+        padding-left:10%;
+
+        
+      }
+
+        
+    }
+
+
+   /* rwd 600px */
+    @media screen and (max-width:600px){
+
+       #slide-bar{
+
+        display:none;
+       }
+
+       nav{
+
+        display:block;
+       }
+
+       #title-bar{
+
+       
+        display:none;
+       }
+
+
+       #title-bar-rwd{
+        display:block;
+    }
+      #div1 li{
+
+        display:block;
+      }
+
+    
+       img{
+           width:100%;
+           margin:0 auto;
+         
+       }
+
+      
+
+       section{
+
+        width:100%;
+       
+       }
+
+       #paragraph-1 ,#paragraph-3{
+
+        width:100%;
+        float:right;
+        text-align:center;
+       }
+
+       #paragraph-2 ,#paragraph-4{
+        
+        width:100%;
+        float:left;
+        text-align:center;
+      }
+
+
+       #pic-1,#pic-3{
+        float:left;
+        width:100%;
+        margin-left:-2%;
+      
+
+       }
+
+       #pic-2,#pic-4{
+        float:right;
+        width:100%;
+        margin-right:-2%;
+
+       }
+       .line{
+
+            width:100%;
+    }
+        
+
+
+     
+    }
+    
+    
+
+
+
+

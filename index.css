@@ -1,0 +1,191 @@
+@import url(//fonts.googleapis.com/earlyaccess/kokoro.css);
+@import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
+
+*{
+
+    padding:0;
+    margin:0;
+    border:0;
+}
+
+#logo-bar{
+
+    width:203px;
+    height:100%;
+   
+    position: absolute;
+    background:wheat;
+    z-index:100;
+}
+
+#background img{
+     background: url("img/background.jpg") 100% ;
+     position:absolute;
+    z-index:-100;
+
+
+}
+
+#slide-bar{
+    
+    width:calc(50% - 200px);
+    height:100%;
+    position: absolute;
+   
+}
+
+#slide-border{
+
+    width:300px;
+    padding-bottom:300px;
+    top:10%;
+    left:30%;
+    border:solid red 2px;
+    background: white;
+    position:relative;
+    font-family: 'Kokoro', serif;
+    z-index:-1;
+ 
+}
+
+#container{
+
+    margin-left:50%;
+
+   
+
+}
+
+
+#slide-bar-spring{
+
+top:12%;
+left:25%;
+font-size:150px;
+  position:absolute;
+  display:none;
+
+}
+
+#slide-bar-summer{
+
+top:12%;
+left:25%;
+font-size:150px;
+position:absolute;
+display:none;
+}
+#slide-bar-autumn{
+
+    top:12%;
+    left:25%;
+    font-size:150px;
+    position:absolute;
+    display:none;
+}
+#slide-bar-winter{
+    
+    top:12%;
+    left:25%;
+    font-size:150px;
+    position:absolute;
+    display:none;
+}
+
+.the-season-discription{
+    width:40%;
+    height:18%;
+    font-size:25px;
+    left:30%;
+    top:60%;
+    margin-left:5%;
+    writing-mode: vertical-lr;
+    font-family: 'cwTeXFangSong', serif;
+    position:absolute;
+    z-index:-1
+}
+
+
+/* four-season-pictures */
+div li{
+
+ 
+    margin-left:1px;
+    list-style:none;
+    float:left;
+   
+}
+ul li:hover{
+
+   cursor:pointer;
+}
+
+
+
+.main-pic{
+    width:50vw;
+    padding-bottom:25vh;
+    opacity:1;
+   
+  
+}
+
+.main-pic:hover{
+
+    opacity:0.8;
+    transition:0.7s ease-in;
+}
+
+#spring{
+
+    background:url("img/spring/spring02.jpg");
+            
+    width:100%;
+  
+}
+  
+#summer{
+    
+        background:url("img/summer/summer03.jpg");
+       
+        width:100%;
+}
+#autumn{
+
+        background:url("img/autumn/autumn03.jpg");
+        width:100%;
+    }
+#winter{
+    
+        background:url("img/winter/winter03.jpg");
+        width:100%;
+    }
+
+    @media screen and (max-width:600px){
+
+       
+        #slide-border{
+
+            width:37%;
+            padding-bottom:37%;
+            left:5%;
+            top:3%;
+            position:fixed;
+            z-index:300;
+
+         
+        }
+
+        #slide-bar-spring , #slide-bar-summer , #slide-bar-autumn , #slide-bar-winter {
+            
+            
+            margin-left:-13px;
+            margin-top:-22px;
+            font-size:100px;
+              position:absolute;
+            
+            
+            }
+
+
+    }

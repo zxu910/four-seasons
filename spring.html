@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="spring.css">
+    <title>Document</title>
+    <script>
+        
+                 function icon(){
+        
+                    if(this.value=='open') {
+            this.value='close';
+            document.getElementById('div1').style.display='none';
+            } 
+        
+        else {
+            this.value='open';
+            document.getElementById('div1').style.display='block';
+            }
+               }
+            </script>
+</head>
+<body>
+    <!-- title -->
+
+    <div id="title-bar"></div>
+  
+    
+    <nav>
+        <div id="title-bar-background">  
+             <figure id="title-bar-rwd" onclick="icon()"></figure>
+        </div>      
+        
+           <div  id="div1" value="close">
+                 <ul>
+                         <li onclick="location.href='spring.html'" id="div1-spring">春</li>
+                         <li onclick="location.href='summer.html'" id="div1-summer">夏</li>
+                         <li onclick="location.href='autumn.html'" id="div1-autumn">秋</li>
+                         <li onclick="location.href='winter.html'" id="div1-winter"> 冬</li>
+                 </ul>
+           </div>
+    </nav>
+
+
+    <div id="slide-bar"> <ul>
+                             <li id="slide-bar-spring" onclick="location.href='spring.html'">春</li>
+                             <li id="slide-bar-summer" onclick="location.href='summer.html'">夏</li>
+                             <li id="slide-bar-autumn" onclick="location.href='autumn.html'">秋</li>
+                             <li id="slide-bar-winter" onclick="location.href='winter.html'">冬</li>
+                          
+    </ul> </div>
+
+    
+
+    <!-- main -->
+    <div class="main">
+         <section>
+            
+            <article id="pic-1">
+                    <img src="img/spring/carrot-3.jpg" alt="">
+                    
+            </article>
+            <aside id="paragraph-1">
+                    <h2>紅蘿蔔</h2>
+                    <div class="line" ></div>
+                   <p>胡蘿蔔的粗纖維，可促進腸胃蠕動，有助消化功能；β胡蘿蔔素在人體內轉化為維生素A，可保持皮膚的光滑。研究證實，胡蘿蔔亦有降低血壓、降低血糖之功效;在漢方認為，紅蘿蔔有補血的作用，且含有豐富營養素，故紅蘿蔔汁被喻為「活的血液」</p>
+ 
+              </aside>
+         </section>
+ 
+         <section>
+              
+               <article id="pic-2">
+                       <img src="img/spring/bamboo-shoots-1.jpg" alt="">
+                       
+               </article>
+
+               <aside id="paragraph-2">
+                    <h2>竹筍</h2>
+                    <div class="line" ></div>
+                   <p>吃竹筍其實好處多多，又能養生，因為中醫認為竹筍有「清熱化痰」的功效，能夠有助止咳化痰，竹筍營養豐富，含有大量的高蛋白、水分，以及豐富的鈣、磷、鐵微量元素和無機鹽。竹筍含脂肪、澱粉很少，屬天然低脂、低熱量食品，其吸附力又強，能吸附很多脂肪的顆粒細胞，對肥胖者減肥排脂有一定的作用。同時可以促進食物發酵，提升人體免疫能力，對消化功能有很大的改善作用，能促進腸道蠕動，幫助消化，去積食，有效改善體質。
+                                
+                             </p>
+ 
+              </aside>
+            </section>
+
+
+        <section>
+               
+                <article id="pic-3">
+                        <img src="img/spring/strawberry-1.jpg" alt="">
+                        
+                </article>
+                <aside id="paragraph-3">
+                        <h2>草莓</h2>
+                        <div class="line" ></div>
+                        <p>草莓含有豐富的維生素C，相對於蘋果，葡萄要高出10倍。壞血病，故又稱抗壞血酸，對腦溢血、冠心病、心絞痛、動脈硬化、高血壓、高血脂等疾病，都有十分積極的預防作用。草莓可以改善膚色，減輕腹瀉，緩解疾病。草莓汁還有滋潤營養皮膚的功效，用它製成各種高級美容霜，對減緩皮膚出現皺紋有顯著效果。
+                                        
+                                       
+                                        
+                                      </p>
+
+                </aside>
+            </section>
+
+            <section>
+                    
+                    <article id="pic-4">
+                            <img src="img/spring/sarda-orientalis-2.jpg" alt="">
+                            
+                    </article>
+
+                    <aside id="paragraph-4">
+                        <h2>齒鰆</h2>
+                        <div class="line" ></div>
+                        <p>齒鰆廣佈於印度- 太平洋之熱帶及亞熱帶海域，西起紅海、非洲東岸，東經夏威夷到美國加州一帶，北至日本九州北方，南至澳洲西南部。台灣齒鰆主要漁獲源於東北部海域，由於魚種生長快速所以重金屬污染的風險很低，算是能安心食用的魚種，一般食用方式建議採取生煎配上點調味料，這樣更能吃出魚的鮮美。</p>
+                    </aside>
+                </section>
+
+ 
+        </div>
+        
+    
+</body>
+</html>
