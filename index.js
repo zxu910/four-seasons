@@ -1,53 +1,64 @@
-function change(i){
-    
-                if(i==1){
-                    document.body.style.backgroundColor="#FFE4E1";
-                    document.getElementById("slide-bar-spring").style.display="block";
-                    document.getElementById("slide-bar-summer").style.display="none";
-                    document.getElementById("slide-bar-autumn").style.display="none";
-                    document.getElementById("slide-bar-winter").style.display="none";
-                    document.getElementById("the-spring-discription").style.display="block";
-                    document.getElementById("the-summer-discription").style.display="none";
-                    document.getElementById("the-autumn-discription").style.display="none";
-                    document.getElementById("the-winter-discription").style.display="none";
-                }
-    
-                if(i==2){
-                    document.body.style.backgroundColor="#87CEEB";
-                    document.getElementById("slide-bar-spring").style.display="none";
-                    document.getElementById("slide-bar-summer").style.display="block";
-                    document.getElementById("slide-bar-autumn").style.display="none";
-                    document.getElementById("slide-bar-winter").style.display="none";
-                    document.getElementById("the-spring-discription").style.display="none";
-                    document.getElementById("the-summer-discription").style.display="block";
-                    document.getElementById("the-autumn-discription").style.display="none";
-                    document.getElementById("the-winter-discription").style.display="none";
-                }
-                if(i==3){
-                    document.body.style.backgroundColor="#FF6347";
-                    document.getElementById("slide-bar-spring").style.display="none";
-                    document.getElementById("slide-bar-summer").style.display="none";
-                    document.getElementById("slide-bar-autumn").style.display="block";
-                    document.getElementById("slide-bar-winter").style.display="none";
-                    document.getElementById("the-spring-discription").style.display="none";
-                    document.getElementById("the-summer-discription").style.display="none";
-                    document.getElementById("the-autumn-discription").style.display="block";
-                    document.getElementById("the-winter-discription").style.display="none";
-                }
-                if(i==4){
-                    document.body.style.backgroundColor="#FFFAFA";
-                    document.getElementById("slide-bar-spring").style.display="none";
-                    document.getElementById("slide-bar-summer").style.display="none";
-                    document.getElementById("slide-bar-autumn").style.display="none";
-                    document.getElementById("slide-bar-winter").style.display="block";
-                    document.getElementById("the-spring-discription").style.display="none";
-                    document.getElementById("the-summer-discription").style.display="none";
-                    document.getElementById("the-autumn-discription").style.display="none";
-                    document.getElementById("the-winter-discription").style.display="block";
-                }
-            }
-                function normal(){
-    
-             
-                    document.body.style.backgroundColor="white";
-                }
+
+$(document).ready(function(){
+   
+    $('#fade').fadeOut(1500);
+   
+   
+    $('#spring').hover(function(){
+       
+       $('#the-spring-discription').show(2000);
+        $('#slide-bar-spring').slideToggle(500);
+        $('#fade').hide();
+        $('#fade').css('z-index','-100');
+        $('#fade').css('background','#FFEBEB');
+        $('#fade').fadeIn(500);
+       
+        },function(){$('#the-spring-discription').hide(0),$('#the-spring-discription').finish(),
+        $('#slide-bar-spring').hide()});
+
+    $('#summer').hover(function(){
+      
+        $('#the-summer-discription').show(2000);
+        $('#slide-bar-summer').slideToggle(500);
+         $('#fade').hide();
+         $('#fade').css('z-index','-100');
+         $('#fade').css('background','#A1EAFB');
+         $('#fade').fadeIn(1500);
+                                   
+        },function(){$('#the-summer-discription').hide(0),$('#the-summer-discription').finish(),
+        $('#slide-bar-summer').hide()});
+
+    $('#autumn').hover(function(){
+        
+        $('#the-autumn-discription').show(2000);
+        $('#slide-bar-autumn').slideToggle(500);
+        $('#fade').hide();
+        $('#fade').css('z-index','-100');
+        $('#fade').css('background','#FF7A5A');
+        $('#fade').fadeIn(1500);
+                                   
+        },function(){$('#the-autumn-discription').hide(0),$('#the-autumn-discription').finish(),
+        $('#slide-bar-autumn').hide()});
+
+    $('#winter').hover(function(){
+        
+        $('#the-winter-discription').show(2000);
+        $('#slide-bar-winter').slideToggle(500);
+        $('#fade').hide();
+        $('#fade').css('z-index','-100');
+        $('#fade').css('background','#F2F9F1');
+        $('#fade').fadeIn(1500);
+                                    }, 
+        function(){$('#the-winter-discription').hide(0),$('#the-winter-discription').finish(),
+        $('#slide-bar-winter').hide()});
+
+
+    });
+
+
+
+
+
+
+
+

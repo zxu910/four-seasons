@@ -9,7 +9,14 @@
 
 }
 
+#fade{
 
+    width:100%;
+    height:100%;
+    z-index:1000;
+    background: wheat;
+    position:absolute;
+}
 
 #logo-bar{
 
@@ -109,11 +116,19 @@ display:none;
     font-family: 'cwTeXFangSong', serif;
     position:absolute;
     z-index:-1;
+  
    
 }
 #the-spring-discription{
 
     margin-left:-8%;
+    display:none;
+}
+
+#the-summer-discription,#the-autumn-discription,#the-winter-discription{
+
+    display:none;
+    margin-left:-10px;
 }
 
 
@@ -173,6 +188,8 @@ ul li:hover{
         background:url("img/winter/winter03.jpg");
         width:100%;
     }
+
+    /* rwd */
 
     @media screen and (max-width:600px){
 
