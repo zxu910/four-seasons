@@ -221,8 +221,8 @@ ul li:hover{
 
         #slide-border  {
 
-            width:200px;
-           padding-bottom:200px;
+            width:150px;
+           padding-bottom:150px;
            margin-left:80%;
         }  
 
@@ -231,21 +231,21 @@ ul li:hover{
             
             margin-left:-13px;
             margin-top:-22px;
-            font-size:100pt;
+            font-size:80pt;
             position:absolute;
             
             
             }
             #the-spring-discription{
 
-                margin-top:-13%;
-                margin-left:55%;
+                margin-top:-20%;
+                margin-left:50%;
                 font-size:18pt;
 
 
             } 
            #the-summer-discription,#the-autumn-discription ,#the-winter-discription{
-                margin-top:-13%;
+                margin-top:-20%;
                 margin-left:60%;
                 font-size:18pt;
             }
