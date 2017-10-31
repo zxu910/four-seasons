@@ -1,6 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/kokoro.css);
 @import url(//fonts.googleapis.com/earlyaccess/cwtexfangsong.css);
 
+ /* 全體區域 start */
 *{
 
     padding:0;
@@ -18,6 +19,9 @@
     position:absolute;
 }
 
+ /* 全體區域 end */
+
+ /* 左側logo欄位 start */
 #logo-bar{
 
     width:203px;
@@ -37,7 +41,10 @@
     z-index:200;
 }
 
+ /* 左側logo欄位 end */
 
+ 
+ /* 中間變換顏色區域 start   */
 #slide-bar{
     
     width:calc(50% - 200px);
@@ -45,7 +52,7 @@
     position: absolute;
    
 }
-
+        /* 上方圓形區域 start */
 #slide-border{
 
     width:300px;
@@ -62,10 +69,7 @@
  
 }
 
-#container{
-
-    margin-left:50%;
-}
+       /* 上方圓形區域  end */
 
 
 #slide-bar-spring{
@@ -102,7 +106,7 @@ display:none;
     position:absolute;
     display:none;
 }
-
+  /* 滑動時顯示的說明文字 start */
 .the-season-discription{
     width:40%;
     height:45%;
@@ -123,17 +127,30 @@ display:none;
 
     margin-left:-8%;
     display:none;
+    font-size:130pt;
 }
 
 #the-summer-discription,#the-autumn-discription,#the-winter-discription{
 
     display:none;
     margin-left:-10px;
+
 }
+     /* 滑動時顯示的說明文字 end */
+
+ /* 中間變換顏色區域 end  */
 
 
 
-/* four-season-pictures */
+/* 右邊四季圖片 start */
+
+
+#container{
+    
+        margin-left:50%;
+    }
+
+    
 div li{
 
  
@@ -189,16 +206,74 @@ ul li:hover{
         width:100%;
     }
 
-    /* rwd */
+/* 右邊四季圖片 end */
+
+/* rwd */
+
+     /* rwd 1050px start */
+     
+    @media screen and ( max-width:1050px){
+
+        #container{
+            
+                margin-left:80%;
+            }
+
+        #slide-border  {
+
+            width:200px;
+           padding-bottom:200px;
+           margin-left:80%;
+        }  
+
+        #slide-bar-spring , #slide-bar-summer , #slide-bar-autumn , #slide-bar-winter {
+            
+            
+            margin-left:-13px;
+            margin-top:-22px;
+            font-size:100pt;
+            position:absolute;
+            
+            
+            }
+            #the-spring-discription{
+
+                margin-top:-13%;
+                margin-left:55%;
+                font-size:18pt;
+
+
+            } 
+           #the-summer-discription,#the-autumn-discription ,#the-winter-discription{
+                margin-top:-13%;
+                margin-left:60%;
+                font-size:18pt;
+            }
+        
+
+      
+
+    }
+           /* rwd 1050px end */
+
+           /* rwd 600px start */
 
     @media screen and (max-width:600px){
+
+
+        #container{
+
+            margin-left:0;
+
+
+        }
 
        
         #slide-border{
 
             width:37%;
             padding-bottom:37%;
-            left:7%;
+            margin-left:-48%;
             top:3%;
             position:fixed;
             z-index:300;
@@ -209,7 +284,7 @@ ul li:hover{
         #slide-bar-spring , #slide-bar-summer , #slide-bar-autumn , #slide-bar-winter {
             
             
-            margin-left:-13px;
+            margin-left:-12px;
             margin-top:-22px;
             font-size:100px;
             position:absolute;
@@ -241,3 +316,4 @@ ul li:hover{
                 }
           
     }
+              /* rwd 600px end */
