@@ -76,7 +76,7 @@
 
 top:12%;
 left:25%;
-font-size:150px;
+font-size:20pt;
   position:absolute;
   display:none;
 
@@ -86,7 +86,7 @@ font-size:150px;
 
 top:12%;
 left:25%;
-font-size:150px;
+font-size:20pt;
 position:absolute;
 display:none;
 }
@@ -246,7 +246,7 @@ ul li:hover{
 
             } 
            #the-summer-discription,#the-autumn-discription ,#the-winter-discription{
-                margin-top:-10%;
+                margin-top:0%;
                 margin-left:85%;
                 font-size:18pt;
             }
